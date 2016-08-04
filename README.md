@@ -5,8 +5,8 @@ A barebones Java EE app based on Payara, with Payara Micro, which can easily be 
 ## Getting sample files from github
 
 ```sh
-$ git clone https://github.com/igapyon/heroku-payara-simple
-$ cd heroku-payara-simple/
+git clone https://github.com/igapyon/heroku-payara-simple
+cd heroku-payara-simple/
 ```
 
 ## Deploying to Heroku
@@ -14,20 +14,20 @@ $ cd heroku-payara-simple/
 ### Deploy
 
 ```sh
-$ heroku login
-$ heroku create
-$ git push heroku master
+heroku login
+heroku create
+git push heroku master
 ```
 
 ### Check service alive
 
 ```sh
-$ heroku open
+heroku open
 ```
 
 ### Remove unused old apps
 
 ```sh
-$ heroku apps
-$ heroku apps:destroy APPNAME --confirm APPNAME
+heroku apps
+heroku apps:destroy APPNAME --confirm APPNAME
 ```
