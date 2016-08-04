@@ -3,16 +3,24 @@ import java.io.IOException;
 
 import fish.payara.micro.BootstrapException;
 import fish.payara.micro.PayaraMicro;
-import fish.payara.micro.PayaraMicroRuntime;
 
+/**
+ * Simple Payara Micro launcher.
+ * 
+ * @author Toshiki Iga
+ */
 public class Main {
-	public static void main(String[] args) throws BootstrapException, IOException {
+	public static void main(final String[] args) throws BootstrapException, IOException {
 		final File file = new File("myapp.war");
 		if (file.exists() == false) {
-			System.out.println("File not found: " + file.getAbsolutePath());
+			System.err.println("[Payara Micro launcher] error: target war file missing: " + file.getAbsolutePath());
 		}
-		final PayaraMicroRuntime instance = PayaraMicro.getInstance()
-				.setHttpPort(Integer.parseInt(System.getenv("PORT"))).bootStrap();
-		instance.deploy(file);
+
+		PayaraMicro.getInstance() //
+				.setHttpPort(Integer.parseInt(System.getenv("PORT"))) //
+				.addDeployment(file.getAbsolutePath()) //
+				.bootStrap();
+
+		System.err.println("[Payara Micro launcher] Payara Micro started successfully.");
 	}
 }
