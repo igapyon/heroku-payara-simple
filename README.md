@@ -1,6 +1,6 @@
-# Simple sample for Payara on Heroku
+# Simple Java EE barebones running with Payara on Heroku
 
-A barebones Java EE app based on Payara, which can easily be deployed to Heroku.
+A barebones Java EE app based on Payara, with Payara Micro, which can easily be deployed to Heroku.
 
 ## Getting sample files from github
 
