@@ -8,7 +8,7 @@ This project provide simple barebones for Payara and Heroku.
 
 Key codes are in lines below:
 
-  https://github.com/igapyon/heroku-payara-simple/blob/v0.1/src/main/java/Main.java#L13
+  https://github.com/igapyon/heroku-payara-simple/blob/v0.1/src/main/java/Main.java#L19
 
 Additional point to be care is setting default context to root in war setting.
 
