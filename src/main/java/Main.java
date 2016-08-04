@@ -5,7 +5,7 @@ import fish.payara.micro.BootstrapException;
 import fish.payara.micro.PayaraMicro;
 
 /**
- * Simple Payara Micro launcher.
+ * Simple Payara Micro launcher for Heroku.
  * 
  * @author Toshiki Iga
  */
@@ -17,8 +17,8 @@ public class Main {
 		}
 
 		PayaraMicro.getInstance() //
-				.setHttpPort(Integer.parseInt(System.getenv("PORT"))) //
-				.addDeployment(file.getAbsolutePath()) //
+				.setHttpPort(Integer.parseInt(System.getenv("PORT"))) // from-Heroku
+				.addDeployment(file.getAbsolutePath()) // deploy-war
 				.bootStrap();
 
 		System.err.println("[Payara Micro launcher] Payara Micro started successfully.");
