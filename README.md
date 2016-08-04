@@ -10,7 +10,9 @@ Key codes are in lines below:
 
   https://github.com/igapyon/heroku-payara-simple/blob/v0.1/src/main/java/Main.java#L19
 
-Additional point to be care is setting default context to root in war setting.
+Additional point to be care is setting default context to root in war setting. See below:
+
+  https://github.com/igapyon/heroku-payara-simple-myapp/blob/v0.1/web/WEB-INF/glassfish-web.xml#L4
 
 ## Getting sample files from github
 
