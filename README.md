@@ -37,7 +37,7 @@ git push heroku master
 heroku open
 ```
 
-### Remove unused old apps
+### Additional: Remove unused old apps
 
 ```sh
 heroku apps
