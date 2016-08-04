@@ -7,7 +7,12 @@ A barebones Java EE app based on Payara, with Payara Micro, which can easily be 
 This project provide simple barebones for Payara and Heroku.
 
 Key codes are in lines below:
+
+```sh
 https://github.com/igapyon/heroku-payara-simple/blob/v0.1/src/main/java/Main.java#L13
+```
+
+Additional point to be care is setting default context to root in war setting.
 
 ## Getting sample files from github
 
